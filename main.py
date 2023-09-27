@@ -12,7 +12,7 @@ def fetch_daily_stock_data(stock_symbols):
         if response.status_code == 200:
             stock_data[symbol] = response.json()
         else:
-            print(f"Failed to fetch data for {symbol}. Status code: {response.status_code}")
+            print("Failed!")
     return stock_data
 
 def fetch_usa_stock_symbols(filename):
